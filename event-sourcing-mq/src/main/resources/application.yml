@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.8.0.32:3306/event-sourcing?useSSL=false
+    username: root
+    password: root
+  rabbitmq:
+    addresses: 10.8.0.32:5672
+    username: admin
+    password: admin
+logging:
+  level:
+    org.springframework.jdbc.core.JdbcTemplate: debug
